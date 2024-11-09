@@ -44,15 +44,23 @@ c = int(input("Podaj długość trzeciego odcinka: "))
 
 if (a+b) > c and (a+c) > b and (b+c) > a:
     print("Można zbudować trójkąt.")
+
+    print("Będzie to trójkąt ", end = "")
+    if a == b == c:
+        print("równoboczny.")
+    elif a == b or b == c or c == a:
+        print("równoramienny.")
+    else:
+        print("różnoboczny.")
+
+    if (a**2 + b**2 == c**2) or (b**2 + c**2 == a**2) or (c**2 + a**2 == b**2):
+        print("Będzie to trójkąt prostokątny.")
+    elif (a**2 + b**2 > c**2) or (c**2 + b**2 > a**2) or (b**2 + c**2 > a**2):
+        print("Będzie to trójkąt ostrokątny.")
+    else:
+        print("Będzie to trójkąt rozwartokątny.")
+
+
 else:
     print("Nie można zbudować trójkąta.")
-
-print("Będzie to trójkąt ", end = "")
-if a == b == c:
-    print("równoboczny.")
-elif a == b or b == c or c == a:
-    print("równoramienny.")
-else:
-    print("różnoboczny.")
-
 
