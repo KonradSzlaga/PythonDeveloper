@@ -6,4 +6,5 @@ numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
 for number in numbers:
     total += number
-print(total)
+
+print("Suma wszystkiech elementów listy",  numbers, "to:", str(total) + ".")
