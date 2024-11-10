@@ -42,3 +42,4 @@ print("maksymalna ilość tych samych wartości wyrzuconych pod rząd to:", str(
 #DOPISAC JESZCZE TABLIOCE KTORA PRZECHOWUJE INFORMACJE O TYM JAKA LICZBA ZOSTAŁA NAJCZESCIEJ WYRZUCONA POD RZAD
 
 
+#
