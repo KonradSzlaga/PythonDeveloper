@@ -39,5 +39,6 @@ x = len(lista)
 print("maksymalna ilość tych samych wartości wyrzuconych pod rząd to:", str((lista[x-1])+1))
 
 
+#DOPISAC JESZCZE TABLIOCE KTORA PRZECHOWUJE INFORMACJE O TYM JAKA LICZBA ZOSTAŁA NAJCZESCIEJ WYRZUCONA POD RZAD
 
 
