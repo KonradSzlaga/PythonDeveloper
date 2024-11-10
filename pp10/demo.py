@@ -24,7 +24,32 @@ print(numbers)
 print(numbers[0], numbers[1])
 #
 #
-#
+#usuwanie
+
+print(fruits)
+del fruits[0]
+print(fruits)
+
+#append dodaje na końcu
+#insert tam gdzie wskazemy
+
+fruits.insert(0, 'orange')
+print(fruits)
+
+
+#iterowanie
+for i in range(len(fruits)):
+    print(fruits[i])
+print()
+
+for fruit in fruits:
+   print(fruit)
+
+
+
+
+
+
 
 
 
