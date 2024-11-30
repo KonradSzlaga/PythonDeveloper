@@ -8,7 +8,5 @@ else:
     print("Wynik to", s - 1, "ziaren.")
 
 #Waga jedngo ziarna to 0,4mg ~ 0,0004g
-kg = 0.0004
-
-
-print(s * kg)
+#kg = 0.0004
+#print(s * kg)

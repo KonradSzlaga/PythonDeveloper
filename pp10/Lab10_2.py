@@ -1,5 +1,3 @@
-
-
 # 2. Napisz program, który zasymuluje 16 rzutów kostką do gry a następnie
 # wyświetli poniższe informacje:
 # • zestaw wylosowanych wyników,
@@ -43,3 +41,4 @@ print("maksymalna ilość tych samych wartości wyrzuconych pod rząd to:", str(
 
 
 #
+
