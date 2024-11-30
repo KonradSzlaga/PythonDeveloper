@@ -22,7 +22,7 @@ else:
     wieksze = "jest mniejsza lub równa 5."
 
 
-#Porównuję wprowadzoną liczbę                       - 1 próba
+#Porównuję wprowadzoną liczbę
 if number != pierwsze:
     print("Niestety źle. Ta liczba", parzystosc)
 
