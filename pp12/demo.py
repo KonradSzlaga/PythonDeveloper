@@ -1,23 +1,24 @@
-#name = input("Jak amsz na imie? ")
+#name = input("Jak masz na imie? ")
 #print("Witaj {}!".format(name))
 
 
 #Get and Show numbers"
 #pobranie 3 liczb od iżutkowniak i wyświetlenie ich na ekranie
 
-def show_message(number_no):
+def get_number(number_no):
     print("Proszę, podaj {} liczbę: ".format(number_no))
+    return int(input())
 
-show_message(1)
-a = int(input())
+# a = get_number(1)
+#
+# b = get_number(2)
+#
+# c = get_number(3)
 
-show_message(2)
-b = int(input())
+# print("Pobrano liczby:", a, b, c)
 
-show_message(3)
-c = int(input())
 
-print("Pobrano liczby:", a, b, c)
+print("Pobrano liczby:", get_number(1), get_number(2), get_number(3))
 
 
 
