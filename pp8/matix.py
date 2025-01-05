@@ -9,4 +9,4 @@ for i in range(1, rozmiar +1):
 
 
 # print(rozmiar)
-# print(symbol)#
+# print(symbol)
