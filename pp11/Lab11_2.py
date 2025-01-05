@@ -1,3 +1,8 @@
+# Napisz skrypt pobierający od użytkownika serię liczb całkowitych, a
+# następnie wyświetl je w kolejności malejącej pozbywając się wcześniej
+# duplikatów.
+
+
 
 #1.Pobranie liczb od użytkownika
 #2.Usuwanie duplikatów

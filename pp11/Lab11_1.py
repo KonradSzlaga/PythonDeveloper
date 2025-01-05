@@ -1,3 +1,8 @@
+# Napisz skrypt symulujący grę losową:
+# użytkownik obstawia 6 liczb z 49,
+# program losuje 6 liczb z 49,
+# użytkownik dostaje informacje o ilości trafień
+
 # Gra losowa
 import random as rd
 
@@ -17,10 +22,6 @@ for i in range(6):
 number_list.sort()
 
 print(number_list)
-
-
-
-
 
 
 generated_numbers = rd.sample(range(1, 50), 6) #bez powtórzeń
