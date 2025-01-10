@@ -8,18 +8,18 @@
 
 import random as rd
 def bandyta(a = 1):
-    floor = 1
-    ceiling = 6
-    odpowiedniki = {1:'A', 2:'B', 3:'C', 4:'D', 5:'E'}
 
-    x = rd.randint(floor, ceiling)
-    y = rd.randint(floor, ceiling)
-    z = rd.randint(floor, ceiling)
+    litery = ['A', 'B', 'C', 'D', 'E']  #Zmiana potrzebna w celu losowania większej liczby liter
+
+#Potrzeba dodać kolejne wiersze poniżej, żeby losować więcej
+
+    x = rd.choice(litery)
+    y = rd.choice(litery)
+    z = rd.choice(litery)
 
     if x == y == z:
         print('Próba nr:', a)
         print(x, y, z)
-        print(odpowiedniki[x], odpowiedniki[y], odpowiedniki[z])
         return
     else:
         print('Próba nr:', a)
