@@ -7,4 +7,4 @@ def printer(char = 'a', how_many = 10, how = 'horizontal'):
     else:
         print('Argument "how" powinien być określony jako "horizontal" lub "vertical".')
 
-printer(how = 'gg')
+printer('a', 50, 'horizontal')
