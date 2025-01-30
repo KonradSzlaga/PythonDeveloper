@@ -1,5 +1,10 @@
 def verint(lst):
-    return all(isinstance(i, int) for i in lst)
+    rs =  all(isinstance(i, int) for i in lst)
+
+    if rs:
+        return "Tak"
+    else:
+        return "Nie"
 
 
 def sumlst(lst):
@@ -14,8 +19,8 @@ def iloczyn(lst):
 
 if __name__ == '__main__':
 
-    print(verint([1,2,3,4,5,6]) == True)
-    print(verint([1, 2, 3.2, 4, 5, 6]) == False)
+    print(verint([1,2,3,4,5,6]) == "Tak")
+    print(verint([1, 2, 3.2, 4, 5, 6]) == "Nie")
 
     print(sumlst([1,2,3,4,5,6]) == 21)
     print(sumlst([1,2,3.2,4,5,6]) == 21.2)
