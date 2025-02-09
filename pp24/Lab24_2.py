@@ -1,17 +1,13 @@
+
 class Animal:
-    sounds = {
-        "pies": "Hau hau!",
-        "kot": "Miau!",
-        "królik": "Chrupu chrupu!",
-        "kaczka": "Kwa kwa!"
-    }
+    total_counter = 0
 
     def introduce(self):
-        print(f"Jestem typem {self.type} mam na imię {self.name}, jest nass {self.counter}!")
+        print(f"Jestem typem {self.type}, mam na imię {self.name}. Jest nas {self.counter} w moim gatunku i {Animal.total_counter} ogółem!")
+        self.make_sound()
 
-    def make_sound(self):
-        print(self.sounds.get(self.type, "Nie wydaję dźwięków."))
-
+    def define_all(self):
+        print(f"Dotychczas utworzona liczba zwierząt: {self.total_counter}.")
 
 class Dog(Animal):
     type = "pies"
@@ -20,9 +16,11 @@ class Dog(Animal):
     def __init__(self, name):
         self.name = name
         Dog.counter += 1
+        Animal.total_counter += 1
+
 
     def make_sound(self):
-        print("Hau hau!")
+        print("Wydawany odgłos: hau hau!")
 
 
 class Cat(Animal):
@@ -32,7 +30,10 @@ class Cat(Animal):
     def __init__(self, name):
         self.name = name
         Cat.counter += 1
+        Animal.total_counter += 1
 
+    def make_sound(self):
+        print("Wydawany odgłos: miau!")
 
 
 class Rabbit(Animal):
@@ -42,7 +43,10 @@ class Rabbit(Animal):
     def __init__(self, name):
         self.name = name
         Rabbit.counter += 1
+        Animal.total_counter += 1
 
+    def make_sound(self):
+        print("Wydawany odgłos: chrupu chrupu!")  # W sumie to nie wiem jak robi królik :|
 
 
 class Duck(Animal):
@@ -52,6 +56,12 @@ class Duck(Animal):
     def __init__(self, name):
         self.name = name
         Duck.counter += 1
+        Animal.total_counter += 1
+
+
+    def make_sound(self):
+        print("Wydawany odgłos: kwa kwa!")
+
 
 
 
@@ -66,4 +76,4 @@ animals = [
 
 for animal in animals:
     animal.introduce()
-    animal.make_sound()
+
